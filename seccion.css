@@ -1,0 +1,82 @@
+body {
+    background-color: #8B0000; /* Rojo Sangre */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#login-container {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6A1B9A; /* Cambia de color al pasar el ratón */
+}
+
+.error {
+    color: #FF0000;
+    margin-top: 10px;
+}
+
+.success {
+    color: #008000;
+    margin-top: 10px;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B0000; /* Color rojo vino */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #6B001A; /* Color rojo vino más oscuro al pasar el mouse */
+  }
+  

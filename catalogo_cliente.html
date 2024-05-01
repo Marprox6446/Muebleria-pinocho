@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Clientes</title>
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo">CATÁLOGO DE CLIENTES</h1>
+      </header>
+      
+      <!-- Contenedor del carrito -->
+      <div id="carrito">
+        <h2>Carrito</h2>
+        <p>Productos en el carrito: <span id="contador-carrito">0</span></p>
+      </div>
+      
+      <div id="catalogo">
+        <div class="producto" data-producto-id="2">
+            <img src="2.jpg" alt="Producto 2">
+            <h3>HISEMY</h3>
+            <p>Hisemy sofá Impermeable…</p>
+            <span>$35.00</span>
+            <button onclick="agregarAlCarrito(2)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="3">
+            <img src="3.jpg" alt="Producto 3">
+            <h3>REAL TEXTIL</h3>
+            <p>REAL TEXTIL Juego de 3 Protectores para Sala - 2 Vistas y Capitonado Pinsonic. Protector de Muebles Lavable - Fundas para sillón -Sofa Cover (Café - Khaki)</p>
+            <span>$45.00</span>
+            <button onclick="agregarAlCarrito(3)">Añadir al carrito</button>
+        </div>
+    
+        <!-- Agregar más productos aquí -->
+        
+        <div class="producto" data-producto-id="4">
+            <img src="4.jpg" alt="Producto 4">
+            <h3>MELOCOTTON</h3>
+            <p>Melocotton Juego de Protector Cubre Sala Elástico Strech Fit. Renueva tu Sala sin gastar más. Juego Completo: Incluye Protectores de Sofá de 1, 2 y 3 plazas. Ideal para Mascotas, Couch Cover..</p>
+            <span>$75.00</span>
+            <button onclick="agregarAlCarrito(4)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="5">
+            <img src="5.jpg" alt="Producto 5">
+            <h3>REAL TEXTIL</h3>
+            <p>Juego de 3 Fundas Cubre Sala - Tejido Jacquard Elástico Fácil Lavado. Ideal para Proteger Tus Muebles - Protector de sillón - Sofa Cover (Ocre)</p>
+            <span>$85.00</span>
+            <button onclick="agregarAlCarrito(5)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="6">
+            <img src="6.jpg" alt="Producto 6">
+            <h3>ANTUVI</h3>
+            <p>ANTUVI Juego de 3 Protectores para Sala, Juego de Protector Cubre Sala, Protector de Muebles con Correa Elástica para Sala, Impermeable y Fácil de Limpiar, Gris Oscuro</p>
+            <span>$135.00</span>
+            <button onclick="agregarAlCarrito(6)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="7">
+            <img src="7.jpg" alt="Producto 7">
+            <h3>MELOCOTTON</h3>
+            <p>MELOCOTTON Juego de Protector Cubre Sala Doble Vista Capitonado, Incluye: Protector de Sofá, Love Seat y Sillón Individual. Protector Reversible para Sala Standard Couch Cover</p>
+            <span>$350.00</span>
+            <button onclick="agregarAlCarrito(7)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="8">
+            <img src="8.jpg" alt="Producto 8">
+            <h3>MUBSON</h3>
+            <p>MUBSON Cubre Sillones de Microfibra con Agarre Antideslizante e Impermeable para 1, 2 o 3 Asientos. Funda para Sofa con Compatibilidad Universal. Cubre Sofa. Slipcovers (3 Asientos, Gris Oscuro)</p>
+            <span>$255.00</span>
+            <button onclick="agregarAlCarrito(8)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="9">
+            <img src="9.jpg" alt="Producto 9">
+            <h3>SHIELD</h3>
+            <p>Sofa Shield Funda Patentada, Microfibra Acolchada Suave Reversible Resistente Al Desgarro, Asiento de 70 ”De Ancho, Protector Duradero contra Manchas de Muebles con Correas, Chocolate para Perros</p>
+            <span>$35.00</span>
+            <button onclick="agregarAlCarrito(9)">Añadir al carrito</button>
+        </div>
+    
+        <div class="producto" data-producto-id="10">
+            <img src="10.jpg" alt="Producto 10">
+            <h3>GRANBEAST</h3>
+            <p>Granbest - Funda de futón repelente al agua de alta elasticidad, fundas de sofá plegables para sofá cama, funda de futón jacquard, protector de muebles impermeable para niños, mascotas (Futon, gris)+</p>
+            <span>$35.00</span>
+            <button onclick="agregarAlCarrito(10)">Añadir al carrito</button>
+        </div>
+      </div>
+      
+      <footer>
+        <p>&copy; 2024 Mueblería Pinocho. Todos los derechos reservados.</p>
+      </footer>
+      
+
+<script src="script_cliente.js"></script>
+
+</body>
+</html>

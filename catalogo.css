@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: rgb(194, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .titulo {
+    font-size: 2em;
+    margin: 0;
+    animation: aparecerDesaparecer 4s infinite;
+  }
+  
+  @keyframes aparecerDesaparecer {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  #catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cuadrícula adaptable con un mínimo de 250px por columna */
+    gap: 20px; /* Espacio entre los productos */
+  }
+  
+  .producto {
+    border: 1px solid #ddd; /* Borde del producto */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .producto h3 {
+    margin-top: 10px;
+  }
+  
+  .producto button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .producto button:hover {
+    background-color: #45a049;
+  }
+
+  #back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B0000; /* Color rojo vino */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #6B001A; /* Color rojo vino más oscuro al pasar el mouse */
+  }
+  

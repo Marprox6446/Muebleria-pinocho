@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .categoria {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .categoria:hover {
+    transform: scale(1.05);
+  }
+  
+  .imagen {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Puedes agregar más estilos según sea necesario */
+  #back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B0000; /* Color rojo vino */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #6B001A; /* Color rojo vino más oscuro al pasar el mouse */
+  }
+  

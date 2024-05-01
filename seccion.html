@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seccion.css">
+    <link rel="stylesheet" href="seccion.js">
+    <title>INICIAR SECCION</title>
+</head>
+<body>
+    <a href="index.html" id="back-to-top-btn">Regresar</a>
+
+
+    <!-- ... tu contenido principal ... -->
+
+    <div id="login-container">
+        <form id="login-form" onsubmit="return validarFormulario()">
+            <h2>Iniciar Sesión / Registro</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmarContrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+
+            <label for="comentario">Comentario para mejorar:</label>
+            <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+            <label for="aceptar">Acepto los términos y servicios:</label>
+            <input type="checkbox" id="aceptar" name="aceptar" required>
+
+            <button type="submit">Registrarse / Iniciar Sesión</button>
+
+            <div id="error-msg" class="error"></div>
+            <div id="success-msg"></div>
+        </form>
+    </div>
+
+    <script>
+        // Agrega una animación al cargar la página para el formulario de inicio de sesión
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginContainer = document.getElementById('loginContainer');
+            loginContainer.style.opacity = '0';
+
+            setTimeout(function () {
+                loginContainer.style.opacity = '1';
+                loginContainer.style.transition = 'opacity 0.5s ease-in-out';
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>

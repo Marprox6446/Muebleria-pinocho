@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(143, 1, 1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.FIJO{
+  margin-top: 120px; /* Ajusta esto según la altura de tu encabezado */
+  position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+#logo-container img {
+  max-height: 55px; /* Tamaño máximo del logo */
+}
+
+#title-container {
+  text-align: right;
+}
+
+#user-cart-container img {
+  max-height: 50px; /* Tamaño máximo de los iconos de usuario y cesta */
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #000000; /* Color de fondo del menú */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-item a:hover {
+  color: #ffcc00; /* Cambia de color al pasar el mouse sobre el enlace */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #050505; /* Color de fondo del desplegable */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-container input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-container button {
+  background-color: #ffcc00; /* Color del botón de búsqueda */
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#search-container button:hover {
+  background-color: #ffe066; /* Cambia de color al pasar el mouse sobre el botón */
+}
+
+/* ... (código anterior) ... */
+
+.menu-item.catalog-button a {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-item.catalog-button a:hover {
+  background-color: #4caf50; /* Cambia de color al pasar el mouse sobre el botón "Catálogo" */
+  color: #fff;
+}
+
+/* Dentro de tu archivo de estilo CSS */
+
+/* Estilo base para los botones de usuario y cesta */
+#usuario, #cesta {
+  display: inline-block;
+  margin: 0 10px; /* Ajusta el margen según tus preferencias */
+}
+
+/* Estilo para los botones cuando se pasa el ratón sobre ellos */
+#usuario:hover, #cesta:hover {
+  filter: brightness(1.2); /* Puedes ajustar el brillo según tus preferencias */
+  transition: filter 0.3s ease; /* Agrega una transición suave al efecto */
+}
+
+#image-container {
+  margin-top: 170px;
+  text-align: center; /* Centra el contenido del contenedor */
+}
+
+#image-container img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen según el ancho del contenedor */
+  height: auto;
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos para la cinta perforada */
+.cinta-perforada {
+  width: 100%;
+  height: 100px;
+  background-color: #c20600;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cinta-perforada img {
+  width: 100px; /* Puedes ajustar el tamaño de la imagen según tus necesidades */
+  height: 100px;
+  border-radius: 50%; /* Para hacer la imagen circular */
+}
+
+.cinta-perforada p {
+  font-size: medium;
+  color: white;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.recuadro {
+  width: 200px;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+.texto-debajo {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Utiliza una fuente atractiva */
+  color: #333; /* Cambia el color del texto */
+  letter-spacing: 1px; /* Añade un espacio entre las letras */
+  line-height: 1.5; /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+#contenedor-mapa {
+  background-color: #900020; /* Rojo Vino */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#mapa-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#mapa {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto; /* Esto centrará el elemento horizontalmente */
+}
+
+.contenedores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contenedor-azul,
+.contenedor-rojo {
+  flex-grow: 1;
+  height: 150px; /* Ajusta la altura según sea necesario */
+  margin: 0 5px; /* Espaciado entre contenedores */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-azul img,
+.contenedor-rojo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contenedor-azul {
+  border: 2px solid #0000FF; /* Azul */
+}
+
+.contenedor-rojo {
+  background-color: #FF0000; /* Rojo */
+  text-align: center;
+}
+
+.contenedor-rojo h2, .contenedor-azul h2 {
+  font-size: 20px; /* Ajusta el tamaño del título según sea necesario */
+}
+
+.contenedor-rojo p, .contenedor-azul p {
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+/* Agrega estilos previos aquí */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.siguenos {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.siguenos h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes-sociales a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.redes-sociales img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
+
+/* Agrega más estilos según sea necesario */
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(48, 48, 48, 0.3);
+  text-align: center;
+}
+
+/* Estilos adicionales según necesidades */
+
+/* Estilos para el contenedor de términos y condiciones */
+
+/* Estilos para el contenedor de términos y condiciones */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: rgb(99, 0, 0);
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow-y: scroll; /* Añadir una barra de desplazamiento vertical */
+  max-height: 70vh; /* Altura máxima del contenedor */
+  z-index: 1000; /* Asegura que el contenedor esté por encima de todo */
+  box-shadow: 0 4px 8px rgba(71, 70, 70, 0.1); /* Sombra para efecto de elevación */
+  animation: fadeIn 0.5s ease; /* Animación de entrada */
+}
+
+/* Estilos para el botón de aceptar */
+.btn-aceptar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.texto{
+  color: white;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 0, 0, 0.9); /* Fondo rojo */
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

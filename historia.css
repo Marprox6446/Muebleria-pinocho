@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #610202;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .subtitulo {
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Agrega más estilos según sea necesario */
+  
+/* Estilos previos */
+
+#equipo {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .miembro {
+    margin: 20px;
+  }
+  
+  .miembro img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .miembro h3 {
+    margin: 10px 0;
+  }
+  
+  /* Otros estilos según sea necesario */
+
+  /* Estilos previos */
+
+#clientes {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .opinion {
+    margin: 20px;
+  }
+  
+  .opinion img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .opinion p {
+    margin: 10px 0;
+  }
+  
+  .opinion cite {
+    font-style: italic;
+  }
+  
+  /* Otros estilos según sea necesario */
+  
+  #back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B0000; /* Color rojo vino */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #6B001A; /* Color rojo vino más oscuro al pasar el mouse */
+  }
+  
